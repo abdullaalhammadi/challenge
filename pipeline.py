@@ -18,8 +18,7 @@ load_dotenv()
 # import random as r
 
 api_key = os.getenv('API_KEY')
-print("The API KEY is: " + api_key)
-sales = pd.read_csv("./data/sales_data.csv", parse_dates=["order_date"], index_col=False)
+sales = pd.read_csv("../data/sales_data.csv", parse_dates=["order_date"], index_col=False)
 
 # I improvised this script to re-assign the order ID's in case a duplicate exists.
 # It finds the duplicate values and iterates by row, where if the value of the order_id
