@@ -1,5 +1,3 @@
 .env
 Dockerfile
 .dockerignore
-requirements.txt
-pipeline.py
