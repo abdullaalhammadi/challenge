@@ -72,7 +72,7 @@ for index, row in users.iterrows():
                          lon = row['lon'],
                          lat=row['lat']))
                     .json())
-    
+
     res["customer_id"] = row["customer_id"]
 
     res = (json.loads(
