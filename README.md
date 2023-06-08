@@ -3,6 +3,24 @@
 The challenge is an ETL process of extracting data from a CSV source, joining the data with data extracted
 from a REST API, aggregating data into insightful tables, dashboarding, then storing the data in a database.
 
+
+## Installation and running guide
+
+### Using git
+
+Clone the git repository and `cd` into the main directory. Then, run from your terminal `streamlit run pipeline.py`
+
+### Using Docker
+
+Make sure you have Docker installed, then run the following command in your terminal:
+
+`docker pull aalhammadi/pipe:1.0`
+
+Then, run the docker image using a container binded to port 8051 by running:
+
+`docker run -p 8501:8501 aalhammadi/pipe:1.0`
+
+Then, you can view the dashboard in your browser by going to `localhost:8501`.
 ### Dependencies:
 - `requests`: Used to make HTTP requests and fetch data from REST API endpoints.
 - `os`: Provides functions for interacting with the operating system, such as accessing environment variables and file operations.
