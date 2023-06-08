@@ -8,7 +8,8 @@ from a REST API, aggregating data into insightful tables, dashboarding, then sto
 
 ### Using git
 
-Clone the git repository and `cd` into the main directory. Then, run from your terminal `streamlit run pipeline.py`
+Clone the git repository and `cd` into the main directory. Then, run from your terminal `streamlit run pipeline.py`. Do note that if you 
+use git, you would need to use your own API key. The script would not run unless you specify your OpenWeatherMap API key as an environment variable.
 
 ### Using Docker
 
@@ -21,6 +22,7 @@ Then, run the docker image using a container binded to port 8051 by running:
 `docker run -p 8501:8501 aalhammadi/pipe:1.0`
 
 Then, you can view the dashboard in your browser by going to `localhost:8501`.
+
 ### Dependencies:
 - `requests`: Used to make HTTP requests and fetch data from REST API endpoints.
 - `os`: Provides functions for interacting with the operating system, such as accessing environment variables and file operations.
